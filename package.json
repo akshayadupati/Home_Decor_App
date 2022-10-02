@@ -1,0 +1,19 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "A small scale home decor website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Akshaya Dupati",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongo": "^0.1.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

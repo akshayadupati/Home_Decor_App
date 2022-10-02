@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@300&display=swap");
+
+/* Utility */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* layout page */
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5em !important;
+  width: 25%;
+  max-width: 100%;
+}
+.nav-link {
+  color: black !important;
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em !important;
+}
+
+.nav-item {
+  padding: 0 20px !important;
+}
+
+/* index page */
+
+#background {
+  position: relative;
+  background: url("../../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container h1 {
+  margin: 0;
+  font-size: 60px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+}
+
+.container h1 span {
+  border: 6px solid black;
+  border-radius: 12px;
+  padding: 6px 14px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.button {
+  color: black;
+  padding: 15px 24px;
+  background: yellow;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: black;
+  text-decoration: none;
+}
+
+
+/* product page */
+
+.product-container {
+  display: flex;
+  margin: 20px;
+  flex-flow: row wrap;
+  gap: 20px 20px;
+  justify-content: center;
+}
+.product-cards {
+  width: 275px;
+  height: 325px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.product-cards:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+.product-image {
+  width: 90%;
+  height: 275px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px;
+}
+
+.product-description {
+  margin: 10px;
+  text-align: center;
+}
+
+/* about-page */
+
+.about-website {
+  width: 90%;
+  background-color: rgb(177, 177, 232);
+  margin: 20px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+/* contact page */
+
+form {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.form-field{
+  padding: 10px;
+  margin: 10px;
+}
+
+.form-field input{
+  padding: 10px;
+  margin-left: 10px;
+}
+textarea{
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+form button {
+  margin: 10px;
+  color: black;
+  padding: 10px 24px;
+  background: yellow;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.review-heading{
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+.review-container{
+  width: 90%;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+  .container{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .container h1{
+    font-size: 40px;
+  }
+  .navbar-brand{
+    font-size: 2em!important;
+  }
+}
